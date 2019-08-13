@@ -26,9 +26,6 @@ TARGET_BOARD_PLATFORM_GPU ?= mali-tDVx
 
 # Choose a product to build for.  Look in the products directory for ones
 # that work.
-ifndef TARGET_PRODUCT
-TARGET_PRODUCT:=rk3326
-endif
 ifndef TARGET_DEVICE
 TARGET_DEVICE:=rk3326
 endif
