@@ -16,7 +16,6 @@
 
 # Use the non-open-source parts, if they're present
 -include vendor/rockchip/rk3326/BoardConfigVendor.mk
--include device/rockchip/common/BoardConfig.mk
 
 CURRENT_SDK_VERSION := RK3326_ANDROID9.0_MID_V1.6
 
@@ -25,9 +24,6 @@ TARGET_PREBUILT_KERNEL := kernel/arch/arm64/boot/Image
 PRODUCT_KERNEL_DTS ?= rk3326-863-lp3-v10-avb
 
 #BOARD_AVB_ENABLE := true
-
-# [TEMP] Waiting for emmc for 1s.
-BOARD_KERNEL_CMDLINE += rootdelay=1
 
 # Disable emulator for "make dist" until there is a 64-bit qemu kernel
 BUILD_EMULATOR := false
