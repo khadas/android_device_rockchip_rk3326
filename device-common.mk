@@ -65,7 +65,8 @@ PRODUCT_COPY_FILES += vendor/rockchip/common/phone/etc/spn-conf.xml:system/etc/s
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.version = 1.0.0 \
     ro.product.ota.host = www.rockchip.com:2300 \
-    ro.vendor.sdkversion = $(CURRENT_SDK_VERSION)
+    ro.vendor.sdkversion = $(CURRENT_SDK_VERSION) \
+    vendor.gralloc.disable_afbc = 1
 
 #
 ## setup boot-shutdown animation configs.
