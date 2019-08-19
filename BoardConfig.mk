@@ -24,6 +24,7 @@ TARGET_PREBUILT_KERNEL := kernel/arch/arm64/boot/Image
 PRODUCT_KERNEL_DTS ?= rk3326-863-lp3-v10-avb
 
 #BOARD_AVB_ENABLE := true
+SF_PRIMARY_DISPLAY_ORIENTATION := 0
 
 # Disable emulator for "make dist" until there is a 64-bit qemu kernel
 BUILD_EMULATOR := false
