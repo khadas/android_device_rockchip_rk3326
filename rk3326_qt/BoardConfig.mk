@@ -13,23 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+include device/rockchip/rk3326/BoardConfig.mk
+BUILD_WITH_GO_OPT := false
 
-PRODUCT_MAKEFILES := \
-        $(LOCAL_DIR)/rk3326_evb/rk3326_evb.mk \
-        $(LOCAL_DIR)/rk3326_pie/rk3326_pie.mk \
-        $(LOCAL_DIR)/rk3326_qt/rk3326_qt.mk \
-        $(LOCAL_DIR)/rk3326_industry/rk3326_industry.mk \
-        $(LOCAL_DIR)/rk3326_go/rk3326_go.mk
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_VARIANT := cortex-a53
+TARGET_CPU_SMP := true
 
-COMMON_LUNCH_CHOICES := \
-    rk3326_evb-userdebug \
-    rk3326_evb-user \
-    rk3326_industry-userdebug \
-    rk3326_industry-user \
-    rk3326_qt-userdebug \
-    rk3326_qt-user \
-    rk3326_go-userdebug \
-    rk3326_go-user \
-    rk3326_pie-userdebug \
-    rk3326_pie-user
-
+PRODUCT_KERNEL_DTS := rk3326-863-lp3-v10-avb
