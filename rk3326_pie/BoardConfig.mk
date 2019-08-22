@@ -26,4 +26,8 @@ TARGET_CPU_SMP := true
 # Android Q use odm instead of oem, but for upgrading to Q, partation list cant be changed, odm will mount at /dev/block/by-name/oem
 BOARD_ODMIMAGE_PARTITION_SIZE := $(shell python device/rockchip/common/get_partition_size.py device/rockchip/rk3326/rk3326_pie/parameter.txt oem)
 
+# No need to place dtb into boot.img for the device upgrading to Q.
+BOARD_INCLUDE_DTB_IN_BOOTIMG :=
+BOARD_PREBUILT_DTBIMAGE_DIR :=
+
 PRODUCT_KERNEL_DTS := rk3326-863-lp3-v10-avb
