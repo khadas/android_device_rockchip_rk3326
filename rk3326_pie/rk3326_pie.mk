@@ -13,6 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+# First lunching is Pie, api_level is 28
+PRODUCT_SHIPPING_API_LEVEL := 28
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 include device/rockchip/common/BoardConfig.mk
 include device/rockchip/rk3326/rk3326_pie/BoardConfig.mk

@@ -13,6 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+# First lunching is Q, api_level is 29
+PRODUCT_SHIPPING_API_LEVEL := 29
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 include device/rockchip/common/BoardConfig.mk
 include device/rockchip/rk3326/rk3326_qt/BoardConfig.mk
