@@ -16,7 +16,7 @@
 
 # First lunching is Pie, api_level is 28
 PRODUCT_SHIPPING_API_LEVEL := 28
-
+PRODUCT_FSTAB_TEMPLATE := $(LOCAL_PATH)/fstab.in
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 include device/rockchip/common/BoardConfig.mk
 include device/rockchip/rk3326/rk3326_pie/BoardConfig.mk

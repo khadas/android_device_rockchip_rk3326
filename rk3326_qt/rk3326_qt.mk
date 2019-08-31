@@ -16,7 +16,7 @@
 
 # First lunching is Q, api_level is 29
 PRODUCT_SHIPPING_API_LEVEL := 29
-
+PRODUCT_FSTAB_TEMPLATE := $(LOCAL_PATH)/fstab.in
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 include device/rockchip/common/DynamicPartitions.mk
 include device/rockchip/common/BoardConfig.mk
