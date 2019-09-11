@@ -19,6 +19,7 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 include device/rockchip/common/BoardConfig.mk
 include device/rockchip/rk3326/rk3326_pie/BoardConfig.mk
+$(call inherit-product, device/rockchip/rk3326/rk3326_pie/device.mk)
 $(call inherit-product, device/rockchip/rk3326/device-common.mk)
 $(call inherit-product, device/rockchip/common/device.mk)
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
