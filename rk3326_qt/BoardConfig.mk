@@ -24,3 +24,4 @@ TARGET_CPU_VARIANT := cortex-a53
 TARGET_CPU_SMP := true
 
 PRODUCT_KERNEL_DTS := rk3326-863-lp3-v10-avb
+PRODUCT_KERNEL_CONFIG := rockchip_defconfig android-10.config

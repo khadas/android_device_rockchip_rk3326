@@ -23,6 +23,7 @@ TARGET_PREBUILT_KERNEL := kernel/arch/arm64/boot/Image
 BOARD_PREBUILT_DTBIMAGE_DIR := kernel/arch/arm64/boot/dts/rockchip
 
 PRODUCT_KERNEL_DTS ?= rk3326-863-lp3-v10-avb
+PRODUCT_KERNEL_CONFIG ?= rockchip_defconfig
 
 #BOARD_AVB_ENABLE := true
 SF_PRIMARY_DISPLAY_ORIENTATION := 0
