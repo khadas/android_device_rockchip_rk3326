@@ -22,7 +22,7 @@ CURRENT_SDK_VERSION := RK3326_ANDROID9.0_MID_V1.6
 TARGET_PREBUILT_KERNEL := kernel/arch/arm64/boot/Image
 BOARD_PREBUILT_DTBIMAGE_DIR := kernel/arch/arm64/boot/dts/rockchip
 
-PRODUCT_KERNEL_DTS ?= rk3326-863-lp3-v10-avb
+PRODUCT_KERNEL_DTS ?= rk3326-863-lp3-v10-rkisp1
 PRODUCT_KERNEL_CONFIG ?= rockchip_defconfig
 
 #BOARD_AVB_ENABLE := true

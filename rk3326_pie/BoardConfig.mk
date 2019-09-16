@@ -30,7 +30,5 @@ BOARD_ODMIMAGE_PARTITION_SIZE := $(shell python device/rockchip/common/get_parti
 BOARD_INCLUDE_DTB_IN_BOOTIMG :=
 BOARD_PREBUILT_DTBIMAGE_DIR :=
 
-PRODUCT_KERNEL_DTS := rk3326-863-lp3-v10-avb
-
 #Need to build system as root for the device upgrading to Q.
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
