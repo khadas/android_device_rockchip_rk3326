@@ -17,7 +17,7 @@
 # Use the non-open-source parts, if they're present
 -include vendor/rockchip/rk3326/BoardConfigVendor.mk
 
-CURRENT_SDK_VERSION := RK3326_ANDROID9.0_MID_V1.6
+CURRENT_SDK_VERSION := RK3326_ANDROID10.0_MID_V1.0
 
 TARGET_PREBUILT_KERNEL := kernel/arch/arm64/boot/Image
 BOARD_PREBUILT_DTBIMAGE_DIR := kernel/arch/arm64/boot/dts/rockchip
