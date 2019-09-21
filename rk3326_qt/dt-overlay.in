@@ -2,7 +2,7 @@
 /plugin/;
 
 &chosen {
-    bootargs_ext = "androidboot.boot_devices=ff390000.dwmmc,ff3b0000.nandc";
+    bootargs_ext = "androidboot.boot_devices=${_boot_device}";
 };
 
 &firmware_android {
