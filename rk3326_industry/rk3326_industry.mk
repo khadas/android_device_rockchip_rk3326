@@ -13,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 include device/rockchip/common/BoardConfig.mk
 include device/rockchip/rk3326/rk3326_industry/BoardConfig.mk
 $(call inherit-product, device/rockchip/rk3326/device-common.mk)
