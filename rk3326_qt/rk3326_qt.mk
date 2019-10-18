@@ -34,7 +34,7 @@ PRODUCT_DEVICE := rk3326_qt
 PRODUCT_BRAND := rockchip
 PRODUCT_MODEL := rk3326_qt
 PRODUCT_MANUFACTURER := rockchip
-PRODUCT_AAPT_PREF_CONFIG := tvdpi
+PRODUCT_AAPT_PREF_CONFIG := mdpi
 #
 ## add Rockchip properties
 #
