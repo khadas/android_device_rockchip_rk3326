@@ -23,4 +23,4 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a53
 TARGET_CPU_SMP := true
 
-PRODUCT_KERNEL_CONFIG := rockchip_defconfig android-10.config
+PRODUCT_KERNEL_CONFIG := rockchip_defconfig android-10-go.config
