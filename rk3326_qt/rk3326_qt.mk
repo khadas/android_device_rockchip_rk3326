@@ -27,6 +27,8 @@ $(call inherit-product, device/rockchip/rk3326/device-common.mk)
 $(call inherit-product, device/rockchip/common/device.mk)
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/../overlay
+
 PRODUCT_CHARACTERISTICS := tablet
 
 PRODUCT_NAME := rk3326_qt
