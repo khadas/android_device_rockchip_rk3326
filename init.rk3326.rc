@@ -11,7 +11,6 @@ on boot
     chown system system /sys/class/thermal/thermal_zone0/policy
     chown system system /sys/class/thermal/thermal_zone1/policy
     chown system system /sys/class/thermal/thermal_zone2/policy
-    
     # update cpusets feature nodes for rk3326 tablet
     write /dev/cpuset/foreground/cpus 0-3
     write /dev/cpuset/foreground/boost/cpus 0-3
