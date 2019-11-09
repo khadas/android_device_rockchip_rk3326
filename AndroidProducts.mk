@@ -17,19 +17,13 @@
 PRODUCT_MAKEFILES := \
         $(LOCAL_DIR)/rk3326_pie/rk3326_pie.mk \
         $(LOCAL_DIR)/rk3326_qt/rk3326_qt.mk \
-        $(LOCAL_DIR)/rk3326_industry/rk3326_industry.mk \
-        $(LOCAL_DIR)/rk3326_go/rk3326_go.mk \
         $(LOCAL_DIR)/rk3326_qgo/rk3326_qgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    rk3326_industry-userdebug \
-    rk3326_industry-user \
     rk3326_qt-userdebug \
     rk3326_qt-user \
     rk3326_qgo-userdebug \
     rk3326_qgo-user \
-    rk3326_go-userdebug \
-    rk3326_go-user \
     rk3326_pie-userdebug \
     rk3326_pie-user
 
