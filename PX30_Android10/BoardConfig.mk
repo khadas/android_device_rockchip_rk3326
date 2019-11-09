@@ -13,20 +13,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+include device/rockchip/rk3326/BoardConfig.mk
+BUILD_WITH_GO_OPT := true
 
-PRODUCT_MAKEFILES := \
-        $(LOCAL_DIR)/PX30_Android10/PX30_Android10.mk \
-        $(LOCAL_DIR)/rk3326_pie/rk3326_pie.mk \
-        $(LOCAL_DIR)/rk3326_qt/rk3326_qt.mk \
-        $(LOCAL_DIR)/rk3326_qgo/rk3326_qgo.mk
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_VARIANT := cortex-a53
+TARGET_CPU_SMP := true
 
-COMMON_LUNCH_CHOICES := \
-	PX30_Android10-userdebug \
-	PX30_Android10-user \
-    rk3326_qt-userdebug \
-    rk3326_qt-user \
-    rk3326_qgo-userdebug \
-    rk3326_qgo-user \
-    rk3326_pie-userdebug \
-    rk3326_pie-user
-
+PRODUCT_UBOOT_CONFIG := px30
+PRODUCT_KERNEL_CONFIG := rockchip_defconfig android-10-go.config rk3326.config
+PRODUCT_KERNEL_DTS := px30-evb-ddr3-v10-avb
