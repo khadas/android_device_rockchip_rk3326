@@ -24,3 +24,11 @@ TARGET_CPU_VARIANT := cortex-a53
 TARGET_CPU_SMP := true
 
 PRODUCT_KERNEL_CONFIG := rockchip_defconfig android-10.config rk3326.config
+
+# AB image definition
+BOARD_USES_AB_IMAGE := false
+
+ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
+    include device/rockchip/common/BoardConfig_AB.mk
+    TARGET_RECOVERY_FSTAB := device/rockchip/rk3326/rk3326_qt/recovery.fstab_AB
+endif
