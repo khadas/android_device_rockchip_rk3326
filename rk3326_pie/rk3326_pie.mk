@@ -20,6 +20,13 @@ PRODUCT_FSTAB_TEMPLATE := $(LOCAL_PATH)/fstab.in
 PRODUCT_DTBO_TEMPLATE := $(LOCAL_PATH)/dt-overlay.in
 PRODUCT_BOOT_DEVICE := ff390000.dwmmc,ff3b0000.nandc
 
+# For upgrading device with retrofit
+BOARD_USES_AB_LEGACY_RETROFIT := false
+
+ifeq ($(strip $(BOARD_USES_AB_LEGACY_RETROFIT)), true)
+    include device/rockchip/common/BoardConfig_AB_retrofit.mk
+endif
+
 include device/rockchip/common/BoardConfig.mk
 include device/rockchip/rk3326/rk3326_pie/BoardConfig.mk
 $(call inherit-product, device/rockchip/rk3326/rk3326_pie/device.mk)
