@@ -107,9 +107,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += ro.boot.copy_oem=true
 endif
 
-# set screen rotation: 0/90/180/270
-SF_PRIMARY_DISPLAY_ORIENTATION := 0
-
 #
 # add Rockchip properties here
 #
