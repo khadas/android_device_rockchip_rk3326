@@ -16,10 +16,7 @@
 PRODUCT_PACKAGES += \
     memtrack.$(TARGET_BOARD_PLATFORM) \
     android.hardware.memtrack@1.0-service \
-    android.hardware.memtrack@1.0-impl \
-    WallpaperPicker \
-    SoundRecorder \
-    Launcher3
+    android.hardware.memtrack@1.0-impl
 
 #$_rbox_$_modify_$_zhengyang: add displayd
 PRODUCT_PACKAGES += \
