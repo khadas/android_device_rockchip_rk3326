@@ -17,14 +17,14 @@
 PRODUCT_MAKEFILES := \
         $(LOCAL_DIR)/PX30_Android10/PX30_Android10.mk \
         $(LOCAL_DIR)/rk3326_pie/rk3326_pie.mk \
-        $(LOCAL_DIR)/rk3326_qt/rk3326_qt.mk \
+        $(LOCAL_DIR)/rk3326_q/rk3326_q.mk \
         $(LOCAL_DIR)/rk3326_qgo/rk3326_qgo.mk
 
 COMMON_LUNCH_CHOICES := \
 	PX30_Android10-userdebug \
 	PX30_Android10-user \
-    rk3326_qt-userdebug \
-    rk3326_qt-user \
+    rk3326_q-userdebug \
+    rk3326_q-user \
     rk3326_qgo-userdebug \
     rk3326_qgo-user \
     rk3326_pie-userdebug \
