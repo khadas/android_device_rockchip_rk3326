@@ -77,11 +77,11 @@ HAVE_BOOT_ANIMATION := $(shell test -f $(TARGET_DEVICE_DIR)/bootanimation.zip &&
 HAVE_SHUTDOWN_ANIMATION := $(shell test -f $(TARGET_DEVICE_DIR)/shutdownanimation.zip && echo true)
 
 ifeq ($(HAVE_BOOT_ANIMATION), true)
-PRODUCT_COPY_FILES += $(TARGET_DEVICE_DIR)/bootanimation.zip:$(TARGET_COPY_OUT_OEM)/media/bootanimation.zip
+PRODUCT_COPY_FILES += $(TARGET_DEVICE_DIR)/bootanimation.zip:$(TARGET_COPY_OUT_ODM)/media/bootanimation.zip
 endif
 
 ifeq ($(HAVE_SHUTDOWN_ANIMATION), true)
-PRODUCT_COPY_FILES += $(TARGET_DEVICE_DIR)/shutdownanimation.zip:$(TARGET_COPY_OUT_OEM)/media/shutdownanimation.zip
+PRODUCT_COPY_FILES += $(TARGET_DEVICE_DIR)/shutdownanimation.zip:$(TARGET_COPY_OUT_ODM)/media/shutdownanimation.zip
 endif
 
 #
@@ -92,14 +92,14 @@ HAVE_PRESET_DEL_CONTENT := $(shell test -d $(TARGET_DEVICE_DIR)/pre_set_del && e
 
 ifeq ($(HAVE_PRESET_DEL_CONTENT), true)
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(TARGET_DEVICE_DIR)/pre_set_del,$(TARGET_COPY_OUT_OEM)/pre_set_del)
+    $(call find-copy-subdir-files,*,$(TARGET_DEVICE_DIR)/pre_set_del,$(TARGET_COPY_OUT_ODM)/pre_set_del)
 
 PRODUCT_PROPERTY_OVERRIDES += ro.boot.copy_oem=true
 endif
 
 ifeq ($(HAVE_PRESET_CONTENT), true)
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(TARGET_DEVICE_DIR)/pre_set,$(TARGET_COPY_OUT_OEM)/pre_set)
+    $(call find-copy-subdir-files,*,$(TARGET_DEVICE_DIR)/pre_set,$(TARGET_COPY_OUT_ODM)/pre_set)
 
 PRODUCT_PROPERTY_OVERRIDES += ro.boot.copy_oem=true
 endif
